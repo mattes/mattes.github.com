@@ -2,7 +2,7 @@
 (function($) {
     $.rotate = function(s) {
         return $.rotate13($.rotate5(s));
-    }
+    };
 
     $.rotate5 = function(s) {
         var b = [],c,i = s.length,a = '0'.charCodeAt(),z = a + 10;
