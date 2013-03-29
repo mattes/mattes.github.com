@@ -1,5 +1,15 @@
 .chromeframe {
-
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #C45A3F;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.chromeframe a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a:hover {
@@ -49,19 +59,26 @@ body {
     font-size: 16px;
     line-height: 26px;
   }
+
+  h1.media-heading {
+    margin-bottom: 10px;
+    color: #000D11;
+    font-size: 30px;
+  }
 }
 
 #skypeStatus {
+  
 }
 
 #skypeStatus.online {
-  color: #04BB5C;
+  color: #5B9671;
 }
 
 #skypeStatus.away {
-  color: #E6C212;
+  color: #64965B;
 }
 
 #skypeStatus.offline {
-  display: none !important;
+  
 }
