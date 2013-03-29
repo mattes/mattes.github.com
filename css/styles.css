@@ -10,13 +10,21 @@ a:hover {
  color: #C45A3F;
  font-weight: bold;
 }
+.important a:hover {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #C45A3F;
+}
 
 .less-important a {
   color: #5B8D96;
 }
+.less-important a:hover {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #5B8D96;
+}
 
 .others a {
-  padding-right: 15px;
+  margin-right: 4px;
 }
 
 h1.media-heading {
