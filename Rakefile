@@ -15,7 +15,10 @@ end
 desc "compile css files"
 task :compilecss do
   system 'if [ -e css/styles.min.css ]; then rm css/styles.min.css; fi && \
-  cat css/*.css > css/styles.min.css.tmp && \
+  cat css/bootstrap.css \
+  css/bootstrap-responsive.css \
+  css/font-awesome.css \
+  css/styles.css > css/styles.min.css.tmp && \
   lessc -yui-compress css/styles.min.css.tmp css/styles.min.css && \
   rm css/styles.min.css.tmp'
 end
