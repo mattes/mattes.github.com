@@ -79,6 +79,10 @@ var loadScript = function(url) {
   document.body.appendChild(script);
 };
 
+var isMobile = function() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+};
+
 // callback for google maps init
 var initializeGoogleMap = function() {
   var MAP;
@@ -89,6 +93,7 @@ var initializeGoogleMap = function() {
     scrollwheel: false,
     disableDefaultUI: true,
     zoomControl: true,
+    draggable: !isMobile(),
     backgroundColor: '#ffffff',
     zoom: 14,
     center: centerLatLng,
