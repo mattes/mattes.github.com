@@ -90,7 +90,7 @@ var initializeGoogleMap = function() {
   var centerLatLng = new google.maps.LatLng(49.878099, 8.656368);
 
   MAP = new google.maps.Map(document.getElementById('map-canvas'), {
-    scrollwheel: isMobile(),
+    scrollwheel: false,
     disableDefaultUI: true,
     zoomControl: true,
     draggable: !isMobile(),
