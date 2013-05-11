@@ -159,6 +159,14 @@ i.important {
   }
 }
 
+
+
+@media (max-width: 480px) {
+  ul.linkbutton li {
+    line-height: 1.9em;
+  }
+}
+
 #map-canvas {
   margin-top: 20px; 
   height: 350px; 
