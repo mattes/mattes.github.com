@@ -1,71 +1,197 @@
 .chromeframe {
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   background-color: #C45A3F;
   color: #fff;
   margin-bottom: 40px;
 }
+.chromeframe span {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  padding: 50px 0;
+}
 .chromeframe a {
   color: #ffffff;
   text-decoration: underline;
+  border-bottom: 0;
   font-weight: bold;
 }
-
-a:hover {
+.chromeframe a:hover {
+  color: #ffffff;
+  border-bottom: 0;
   text-decoration: none;
 }
 
-.important a {
- color: #C45A3F;
- font-weight: bold;
-}
-.important a:hover {
-  padding-bottom: 1px;
-  border-bottom: 1px solid #C45A3F;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  margin: 20px 0px;
+  padding-bottom: 200px;
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5em;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-.less-important a {
-  color: #5B8D96;
+.container {
+  max-width: 800px;
+  min-width: 380px;
 }
-.less-important a:hover {
+
+h1 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+ul.float li {
+  float: left;
+  margin-right: 10px;
+}
+
+ul.linkbutton li {
+  line-height: 1.7em;
+}
+ul.linkbutton li a {
+  text-decoration: none;
+  border: 0;
+  background-color: #5B8D96;
+  color: #ffffff;
+  padding: 4px 5px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+ul.linkbutton li a:hover {
+  text-decoration: none;
+  border: 0;
+  color: rgb(91, 141, 150);
+  background: rgba(91, 141, 150, 0.1); 
+}
+ul.important li a {
+  background-color: #C45A3F;
+}
+ul.important li a:hover {
+  color: #C45A3F;
+  background: rgba(196, 90, 63, 0.1); 
+}
+
+ul.longlist {
+  margin-left: 1em;
+}
+
+ul.longlist li {
+  margin-bottom: 0.5em;
+  list-style-type: disc;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #5B8D96;
   padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  color: #5B8D96;
+  text-decoration: none;
   border-bottom: 1px solid #5B8D96;
 }
 
-.others a {
-  margin-right: 4px;
+
+h1 {
+  font-size: 2em;
 }
 
-h1.media-heading {
-  margin-bottom: 10px;
-  color: #000D11;
+h2 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: normal;
 }
 
-body {
-  margin: 20px 0px;
+a.clean, a.clean:hover {
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
-.media-body {
-  max-width: 400px;
+
+.row-fluid .span3 i {
+  /* left column icon */
+  float: right;
+  font-size: 1.6em;
+  color: #5B8D96;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
-.media-body p {
+i.important {
+  color: #C45A3F !important;
+}
+
+.row-fluid .span3 {
+  /* left column */
+  color: #222;
+}
+
+
+@media (max-width: 767px) {
+  .row-fluid .span3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  } 
+  .row-fluid .span3 i {
+    font-size: 2em;
+  }
+}
+
+#map-canvas {
+  margin-top: 20px; 
+  height: 350px; 
+  width: 100%;
+}
+
+
+
+#map-canvas img {
+  /* fix for bootstrap.css interfering with Google Maps InfoWindow */
+  /* https://github.com/twitter/bootstrap/issues/2410 */
+  /* https://github.com/divio/django-cms/pull/1741 */
+  max-width: none;
+}
+
+
+#twitterFav {
+}
+
+#twitterFav blockquote {
+  padding: 0;
+  border-left: 0px;
+}
+
+#twitterFav blockquote p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  color: #444;
+  line-height: 1.5em;
 }
 
-@media (max-width: 480px) {
-  .media-body p {
-    font-size: 16px;
-    line-height: 26px;
-  }
 
-  h1.media-heading {
-    margin-bottom: 10px;
-    color: #000D11;
-    font-size: 30px;
-  }
-}
 
 #skypeStatus {
   

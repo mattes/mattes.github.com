@@ -6,13 +6,17 @@
 
     <title>Matthias Kadenbach</title>
     <meta name="google-site-verification" content="7TURcW-SwxCa0xDHdZ3OsIq7makC-2FSUh8MYdGrysk">
-    <meta name="description" content="Personal website from Matthias Kadenbach">
+    <meta name="description" content="Personal website from Matthias Kadenbach. I believe in good software.">
     <meta name="author" content="Matthias Kadenbach">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css?1000">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css?1000">
-    <link rel="stylesheet" href="css/font-awesome.min.css?1000">
-    <link rel="stylesheet" href="css/styles.css?1014">
+    <!--
+    <link rel="stylesheet" href="css/bootstrap.min.css?1001">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css?1001">
+    <link rel="stylesheet" href="css/font-awesome.min.css?1001">
+    <link rel="stylesheet" href="css/styles.css?1020">
+    -->
+    <link rel="stylesheet" href="css/styles.min.css?1021">
+
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
 
     <script type="text/javascript">
@@ -31,62 +35,114 @@
         <script src="js/html5shiv.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body itemscope itemtype="http://data-vocabulary.org/Person">
+    
     <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <div class="chromeframe"><span>You are using an outdated browser.<br> Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</span></div>
     <![endif]-->
 
 
     <div class="container">
 
-      <div class="media" itemscope itemtype="http://data-vocabulary.org/Person">
-        <a class="pull-left" href="http://goo.gl/lXnSD" style="width:160px; height: 160px;">
-          <img class="media-object img-rounded" itemprop="photo" src="http://gravatar.com/avatar/1296edcd40a8fb8af4086e1544fcc2a9?s=160" alt="Matthias Kadenbach">
-        </a>
-        <div class="media-body">
-          <h1 class="media-heading" itemprop="name">Matthias Kadenbach</h1>
+      <div class="row-fluid">
+        <div class="span12">
+          
+          <a href="http://goo.gl/lXnSD" class="clean">
+            <img itemprop="photo" class="img-circle" src="http://gravatar.com/avatar/1296edcd40a8fb8af4086e1544fcc2a9?s=600" alt="Matthias Kadenbach" style="width: 100%; max-width:200px;">
+          </a>
+          
+          <h1 itemprop="name" style="margin-top: 30px;">Matthias Kadenbach</h1>
+          <h2>I will soon finish my master&rsquo;s degree in Leadership in the Creative Industries. I am the founder of Jungpark GmbH. I believe in good software.</h2>
 
-          <p class="important">
-            <a href="https://twitter.com/mkadenbach">twitter</a>
-            &middot;&nbsp;<a href="https://github.com/mattes">github</a>
-            &middot;&nbsp;<a href="https://www.xing.com/profile/Matthias_Kadenbach">xing</a> 
-            &middot;&nbsp;<a href="https://kippt.com/mkadenbach">kippt</a>
-          </p>
+          <div id="twitterFav" style="display: none"><hr></div>
+        </div>
+      </div>
 
+      <hr>
+      <div class="row-fluid">
+        <div class="span3">
+          <i class="icon-star important"></i> my favorites
+        </div>
+        <div class="span9">
+          <ul class="float linkbutton important">
+            <li><a href="https://twitter.com/mkadenbach">twitter</a></li>
+            <li><a href="https://github.com/mattes">github</a></li>
+            <li><a href="https://www.xing.com/profile/Matthias_Kadenbach">xing</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <p class="less-important">
-            <a href="#" id="m" rel="nofollow"></a><br>
-            <a href="#" id="s" rel="nofollow"></a> <i id="skypeStatus"></i>
-          </p>
-
-          <p class="less-important">  
-            <a href="http://goo.gl/maps/9eMxd" itemprop="address">Gutenbergstraße 9, 64289 Darmstadt</a>
-          </p>
-
-          <p class="less-important others">
-            <a href="http://www.jungpark.com" title="I founded this company">jungpark</a>
-            <a href="https://www.facebook.com/matthias.kadenbach" rel="nofollow">facebook</a>
-            <a href="https://soundcloud.com/matteska" rel="nofollow" title="tunes I like">soundcloud</a>
-            <a href="https://npmjs.org/~mattes" title="npm packages I published">npm</a>
-            <a href="http://stackoverflow.com/users/2142441/mattes" title="">stackoverflow</a> 
-            <a href="http://www.amazon.de/registry/wishlist/1GMF76KBDPBBZ" rel="nofollow" title="things I&lsquo;d like to have">amazon wish list</a>
-            <a href="https://plus.google.com/116973808496688599801?rel=author">google+</a>
-          </p>
-
-
+      <hr>
+      <div class="row-fluid">
+        <div class="span3">
+          <i class="icon-comments"></i> say hello
+        </div>
+        <div class="span9">
+          <ul class="linkbutton">
+            <li><a href="#" id="m" rel="nofollow"></a></li>
+            <li><a href="#" id="s" rel="nofollow"></a> <i id="skypeStatus"></i></li>
+            <li><a href="http://goo.gl/maps/9eMxd" id="googleMapsLink" itemprop="address">Gutenbergstraße 9, 64289 Darmstadt</a></li>
+          </ul>
         </div>
       </div>
 
     </div>
 
+    <div id="map-canvas"></div>
+    <hr>
 
+    <div class="container">
 
+      <div class="row-fluid">
+        <div class="span3">
+          <i class="icon-heart"></i> talk with me about
+        </div>
+        <div class="span9">
+          <p>HTML5, JavaScript, CSS3, PHP, Ruby, Rails, Java, Go, Arduino, Pandaboard, Raspberry Pi, Arch Linux ARM, Usability, User Centered Design, User Experience</p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row-fluid">
+        <div class="span3">
+          <i class="icon-reorder"></i> i&rsquo;m here, too
+        </div>
+        <div class="span9">
+          <ul class="linkbutton">
+            <li><a href="https://www.facebook.com/matthias.kadenbach" rel="nofollow">facebook</a> <span>find me on facebook</span></li>
+            <li><a href="https://soundcloud.com/matteska" rel="nofollow">soundcloud</a> <span>tunes I like</span></li>
+            <li><a href="https://npmjs.org/~mattes">npm</a> <span>nodejs packages I published</span></li>
+            <li><a href="http://stackoverflow.com/users/2142441/mattes">stackoverflow</a> <span>i should be more active :-/</span></li>
+            <li><a href="https://flinc.org/users/3615">flinc</a> <span>let&rsquo;s carpool together</span></li>
+            <li><a href="https://plus.google.com/116973808496688599801?rel=author">google+</a> <span>i don&rsquo;t use it very often though</span></li>
+            <li><a href="http://www.amazon.de/registry/wishlist/1GMF76KBDPBBZ" rel="nofollow">amazon wish list</a> <span>things I urgently need ;-)</span></li>
+            <li><a href="https://kippt.com/mkadenbach">kippt</a> <span>my bookmarks</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="kipptContainer" style="display: none">
+        <hr>
+        <div class="row-fluid">
+          <div class="span3">
+            <i class="icon-thumbs-up"></i> i recently read
+          </div>
+          <div class="span9">
+            <ul class="longlist" id="kipptClips">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js?1000"></script>
-    <script src="js/rotator.jquery.js?1000"></script>
-    <script src="js/js.js?1001"></script>
-
-
+    <!--
+    <script src="js/bootstrap.min.js?1001"></script>
+    <script src="js/rotator.jquery.js?1001"></script>
+    <script src="js/js.js?1020"></script>
+    -->
+    <script src="js/js.min.js?1021"></script>
 
   </body>
 </html>
