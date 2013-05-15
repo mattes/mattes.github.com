@@ -1,6 +1,29 @@
+require 'rubygems'
+require 'builder'
+require 'Date'
+
 desc "see usage"
 task :default do 
   system 'rake -T'
+end
+
+desc "update sitemap.xml with current date"
+task :compile_sitemap do
+  output = ''
+  xml = Builder::XmlMarkup.new(:target => output, :indent => 2)
+  xml.instruct!
+  xml.urlset(:xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9") {
+    xml.url {
+      xml.loc "http://matthiaskadenbach.de"
+      xml.lastmod Date.today
+      xml.changefreq "weekly"
+      xml.priority "1.0"
+    }
+  }
+  # save to file
+  open('sitemap.xml', 'w') do |f|
+    f << output
+  end
 end
 
 desc "compile js files"
