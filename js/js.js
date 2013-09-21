@@ -89,6 +89,19 @@ var initializeGoogleMap = function() {
   var darmstadtLatlng = new google.maps.LatLng(49.878089, 8.662747);
   var centerLatLng = new google.maps.LatLng(49.878099, 8.656368);
 
+  var styles = [
+    {
+      "stylers": [
+        { "hue": "#66BD8E" },
+        { "saturation": -60 },
+        { "gamma": 0.99 }
+      ]
+    }
+  ];
+
+  var styledMap = new google.maps.StyledMapType(styles,
+      {name: "Styled Map"});
+
   MAP = new google.maps.Map(document.getElementById('map-canvas'), {
     scrollwheel: false,
     disableDefaultUI: true,
@@ -100,10 +113,15 @@ var initializeGoogleMap = function() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
 
+  MAP.mapTypes.set('map_style', styledMap);
+  MAP.setMapTypeId('map_style');
+  
+
   // create marker
   var marker = new google.maps.Marker({
     position: darmstadtLatlng,
     clickable: true,
+    flat: true,
     title: $('#googleMapsLink').text(),
     map: MAP
   });

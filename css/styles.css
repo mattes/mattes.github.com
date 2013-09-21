@@ -69,7 +69,7 @@ ul.linkbutton li {
 ul.linkbutton li a {
   text-decoration: none;
   border: 0;
-  background-color: #5B8D96;
+  background-color: #66BD8E;
   color: #ffffff;
   padding: 4px 5px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -77,15 +77,15 @@ ul.linkbutton li a {
 ul.linkbutton li a:hover {
   text-decoration: none;
   border: 0;
-  color: rgb(91, 141, 150);
-  background: rgba(91, 141, 150, 0.1); 
+  color: #66BD8E;
+  background: rgba(102, 189, 142, 0.1); 
 }
 ul.important li a {
-  background-color: #C45A3F;
+  background-color: #DB5F52;
 }
 ul.important li a:hover {
-  color: #C45A3F;
-  background: rgba(196, 90, 63, 0.1); 
+  color: #DB5F52;
+  background: rgba(219, 95, 82, 0.1); 
 }
 
 ul.longlist {
@@ -103,14 +103,14 @@ p {
 
 a {
   text-decoration: none;
-  color: #5B8D96;
+  color: #66BD8E;
   padding-bottom: 1px;
   border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: #5B8D96;
+  color: #66BD8E;
   text-decoration: none;
-  border-bottom: 1px solid #5B8D96;
+  border-bottom: 1px solid #66BD8E;
 }
 
 
@@ -135,12 +135,12 @@ a.clean, a.clean:hover {
   /* left column icon */
   float: right;
   font-size: 1.6em;
-  color: #5B8D96;
+  color: #66BD8E;
   padding-left: 10px;
   padding-bottom: 10px;
 }
 i.important {
-  color: #C45A3F !important;
+  color: #DB5F52 !important;
 }
 
 .row-fluid .span3 {
@@ -214,4 +214,12 @@ i.important {
 
 #skypeStatus.offline {
   
+}
+
+hr {
+  border-top: 4px solid #fafafa;
+}
+
+hr.clean {
+  border-top: 0px !important;
 }
