@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-  $('#m').attr('href', $.rotate13('znvygb:zngguvnf.xnqraonpu@tznvy.pbz')).append(
-         $.rotate13('zngguvnf.xnqraonpu@tznvy.pbz'));
-
-  if (navigator.userAgent.match(/iPhone|iPad/i)) {
-    $('#s').attr('href', $.rotate13('fxlcr://zxnqraonpu')).append(
-           $.rotate13('fxlcr/zxnqraonpu'));
-  } else {
-    $('#s').attr('href', $.rotate13('fxlcr:zxnqraonpu?pnyy')).append(
-           $.rotate13('fxlcr/zxnqraonpu'));
-  }
-
   // more button
   $('.l1.more').click(function(e){
     e.preventDefault();
