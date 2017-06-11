@@ -104,5 +104,8 @@ ul.links li a {
     display: none;
   }
 
-
 }
+
+a {
+  color: #000000;  
+} 
